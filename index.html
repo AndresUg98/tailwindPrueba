@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200">
+    <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 fixed w-full z-10">
         <nav class="container mx-auto flex intems-center justify-between py-4">
             <a href="#" class="text-lg font-bold">LOGO</a>
             <ul class="flex space-x-4">
@@ -46,5 +46,46 @@
         </button>
 
     </section>
+
+    <section class="container mx-auto px-8 py-16 ">
+        <h2 class="text-3xl font-bold mb-6">Nuestros Servicios</h2>
+        <div class=" grid  grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div class="bg-white rounded-xl shadow-xl text-center  p-8 ">
+                <h3 class="text-xl font-bold pb-8">Asesorías</h3>
+                <figure class="w-48 h-48 mx-auto mb-4">
+                    <img src="./assets/icons/asesoria.webp" alt="" srcset="">
+                </figure>
+                <p class="text-base">
+                    Contamos con asesorías grupales pero con atención personalizada, para el correcto avance de nuestros estudiantes en 
+                    materias en las cuales tienen problemas. Contamos con asesorias en: 
+                    <span class="bg-[linear-gradient(to_top,theme(colors.yellow.300)_50%,transparent_50%)]">
+                         Matemáticas, Lectoescitura e Inglés.
+                    </span> 
+                </p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-xl text-center ">
+                <h3 class="text-xl font-bold pb-8">Mesa de tareas</h3>
+                <figure class="w-48 h-48 mx-auto mb-4">
+                    <img src="./assets/icons/mesaTareas.webp" alt="" srcset="">
+                </figure>
+                <p class="text-base">Apoyamos y guiamos a nuestros niños a resolver tareas complicadas para ellos. No damos la respuesta, si no que los encaminamos paso a paso para que ellos la descrubran por su cuenta.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-xl text-center ">
+                <h3 class="text-xl font-bold pb-8">Cursos sabatinos</h3>
+                <figure class="w-48 h-48 mx-auto mb-4">
+                    <img src="./assets/icons/cursos.webp" alt="" srcset="">
+                </figure>
+                <p class="text-base">Contamos con un curso de ingles los sabados, con una 
+                    <span class="bg-[linear-gradient(to_top,theme(colors.yellow.300)_50%,transparent_50%)]"> duración de 1h 30 min. </span> 
+                    Perfecto para aquellos niños que desean aprender un nuevo idioma y listos para aprender con diferentes actividades y juegos.
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
 </body>
 </html>
