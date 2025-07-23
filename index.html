@@ -14,9 +14,39 @@
                 <a href="#" class="text-lg font-bold  ">
                     CAE BRUSELAS
                 </a>
+            
             </div>
 
-            <ul class="flex space-x-8">
+            <!-- Botón hamburguesa -->
+            <button id="menu-toggle" class="z-50 relative md:hidden text-white focus:outline-none">
+                <!-- Icono de menú abrir -->
+                <svg id="menuIcon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"  d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <!-- Icono de menú cerrar -->
+                <svg id="menuIcon-close" class="hidden  w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"  d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+
+
+            </button>
+
+            <!-- Menú de navegación Movil-->
+            <ul id="mobile-menu" class="absolute flex flex-col text-center text-xl align-middle justify-center right-0 top-0 h-screen w-1/3  space-y-16 bg-blue-500/80 z-40 px-4 py-8 hidden md:hidden">
+
+                <li class="hover:text-gray-200">
+                    <a  href="#">Servicios</a>
+                </li>
+                <li class="hover:text-gray-200">
+                    <a href="#">Acerca de</a>
+                </li>
+                <li class="hover:text-gray-200">
+                    <a href="#">Ubicación</a>
+                </li>
+            </ul>
+
+            <!-- Menú de navegación laptop-->
+            <ul class=" hidden md:flex space-x-8">
                 <li class="hover:text-gray-200">
                     <a href="#">Servicios</a>
                 </li>
@@ -35,8 +65,8 @@
         <div class="absolute inset-0 bg-black opacity-40"></div>
         
         <div class=" relative container mx-auto flex flex-col px-8  pt-40 ">
-            <h1 class="text-5xl text-zinc-300 font-bold  pt-18">Bienvenido al</h1>
-            <h1 class="text-6xl font-bold font-paytone " >
+            <h1 class=" text-3xl md:text-5xl text-zinc-300 font-bold  pt-18">Bienvenido al</h1>
+            <h1 class="text-3xl md:text-6xl font-bold font-paytone " >
                 <span class="text-yellow-500 [-webkit-text-stroke:0.1px_white]" >Centro</span>
                 <span class="text-teal-500 [-webkit-text-stroke:0.1px_white]" >de</span>
                 <span class="text-purple-700 [-webkit-text-stroke:0.1px_white]" >Asesoría</span>
@@ -45,7 +75,7 @@
                 <span class="text-blue-800 [-webkit-text-stroke:0.1px_white]" >Bruselas</span>
             </h1>
 
-            <p class="text-xl text-zinc-300 font-bold">"Sembrando valores que trascienden"</p>
+            <p class="text-lg md:text-xl text-zinc-300 font-bold">"Sembrando valores que trascienden"</p>
         </div>
 
         <button class="mx-8 my-8 bg-white relative  hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">   
@@ -112,10 +142,10 @@
 
     <section class="container mx-auto px-8 py-4">
         
-        <div class="bg-zinc-50 shadow-xl rounded-xl  grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-12">
-            <div class="text-xl flex flex-col justify-center">
-                <h2 class="text-3xl font-bold mb-6">Un pequeño vistazo a nuestro proposito</h2>
-                <p class="leading-loose">En el Centro de Asesoría Escolar Bruselas creemos en el poder del acompañamiento académico.
+        <div class="bg-zinc-50 shadow-xl rounded-xl  grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12 py-12 ">
+            <div class="flex flex-col justify-center">
+                <h2 class="text-xl md:text-3xl font-bold mb-6">Un pequeño vistazo a nuestro proposito</h2>
+                <p class="text-md md:text-xl leading-loose">En el Centro de Asesoría Escolar Bruselas creemos en el poder del acompañamiento académico.
                     Nuestro compromiso es brindar a cada estudiante el apoyo que necesita para superar sus retos, reforzar sus habilidades y aprender con confianza. No solo ayudamos con tareas: 
                     
                     <ul class="leading-loose">
@@ -128,7 +158,7 @@
                     </ul>
                 </p>
             </div>
-            <div class="text-xl">
+            <div >
                 <iframe
                 class="w-full aspect-video rounded-xl"
                 src="https://www.youtube.com/embed/J1RyXPe_-GY?autoplay=1&mute=1&loop=1&playlist=J1RyXPe_-GY"
@@ -142,11 +172,11 @@
         </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto px-8 py-14 ">
+    <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto px-8 py-14 gap-8 ">
         <div class="flex flex-col  h-full w-full items-center leading-loose ">
-            <h2 class="text-3xl font-bold">Horarios</h2>
+            <h2 class="text-xl md:text-3xl font-bold">Horarios</h2>
             <div class="w-full flex flex-col items-center pt-12">
-                <p class="text-xl">
+                <p class="text-lg md:text-xl">
                     <span class="text-blue-500 font-bold">
                         Lunes a Viernes: 
                     </span>
@@ -154,7 +184,7 @@
                     4:00 PM - 6:30 PM
                 </p>
                 <div class="w-2/3 border-t border-dashed border-gray-400 my-4"></div>
-                <p class="text-xl">
+                <p class="text-lg md:text-xl">
                     <span class="text-blue-500 font-bold">
                         Sábados: 
                     </span>
@@ -175,12 +205,10 @@
             </div>
 
         </div>
-        <div class=" w-full items-end flex flex-col align-middle  mx-auto">
+        <div class="w-1 md:w-full items-center md:items-end flex flex-col align-middle  mx-auto">
             <iframe 
-                class="rounded-xl "
+                class="rounded-xl w-80 md:w-full aspect-video"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.2054514501606!2d-106.1410648!3d28.683500199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea431840539779%3A0xb898da8b12180676!2sColegio%20Bruselas%20Biling%C3%BCe!5e0!3m2!1ses!2smx!4v1753205787397!5m2!1ses!2smx" 
-                width="600" 
-                height="450" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
@@ -189,24 +217,25 @@
         </div>
     </section>
 
-    <footer class=" h-14 container bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 py-6 flex items-center justify-between px-8 w-full ">
-        <div class="font-semibold">
+    <footer class=" h-14 container bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 py-6 flex items-center justify-between px-4 w-full ">
+        <div class="text-xs md:text-md font-semibold">
             <p>Cada avance, por pequeño que sea, es un gran paso 💖</p>
         </div>
         <div>
-            <ul class="flex space-x-8">
+            <ul class="flex space-x-4">
                 <li class=" flex">
                     <img class="mr-2 w-6 h-6 place-self-center" src="./assets/icons/facebook-icon.png" alt="" srcset="">
-                    <a href="https://www.facebook.com/profile.php?id=100057082555491" target="_blank">Facebook</a>
+                    <a class="hidden md:inline" href="https://www.facebook.com/profile.php?id=100057082555491" target="_blank">Facebook</a>
                 </li>
                 <li class=" flex">
                     <img class="mr-2 w-6 h-6 place-self-center" src="./assets/icons/instagram-icon.png" alt="" srcset="">
-                    <a href="https://www.instagram.com/asesorias_bruselas/" target="_blank">Instagram</a>
+                    <a class="hidden md:inline" href="https://www.instagram.com/asesorias_bruselas/" target="_blank">Instagram</a>
                 </li>
             </ul>
         </div>
 
     </footer>
 
+    <script src="./hooks.js"></script>
 </body>
 </html>
