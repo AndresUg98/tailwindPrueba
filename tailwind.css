@@ -3,3 +3,21 @@
 @import 'tailwindcss/utilities';
 
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* Estilos globales personalizados */
+body {
+  scroll-behavior: smooth;
+}
+/* Track (fondo de la barra) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo transparente */
+}
+
+/* Scrollbar mínima */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}

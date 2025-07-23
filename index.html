@@ -8,21 +8,28 @@
 </head>
 <body>
     <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 fixed w-full z-10">
-        <nav class="container mx-auto flex intems-center justify-between py-4">
-            <a href="#" class="text-lg font-bold">LOGO</a>
-            <ul class="flex space-x-4">
-                <li class="hover:text-gray-200">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="hover:text-gray-200">
-                    <a href="#">Acerca</a>
-                </li>
+        <nav class="container h-14 mx-auto flex items-center justify-between py-4 px-8">
+            <div class="h-auto w-auto flex items-baseline gap-4">
+                <img class="h-7 w-10" src="./assets/imgs/logo2.png" alt="Logo CAE Bruselas">
+                <a href="#" class="text-lg font-bold  ">
+                    CAE BRUSELAS
+                </a>
+            </div>
+
+            <ul class="flex space-x-8">
                 <li class="hover:text-gray-200">
                     <a href="#">Servicios</a>
+                </li>
+                <li class="hover:text-gray-200">
+                    <a href="#">Acerca de</a>
+                </li>
+                <li class="hover:text-gray-200">
+                    <a href="#">Ubicación</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <section class="relative h-[85vh] bg-cover bg-center " style="background-image: url('/assets/imgs/bg-hero.webp');">
 
         <div class="absolute inset-0 bg-black opacity-40"></div>
@@ -38,11 +45,11 @@
                 <span class="text-blue-800 [-webkit-text-stroke:0.1px_white]" >Bruselas</span>
             </h1>
 
-            <p class="text-xl text-zinc-300 font-bold">Aprender un poco cada día, nos ayuda a mejorar inmensamente cada año</p>
+            <p class="text-xl text-zinc-300 font-bold">"Sembrando valores que trascienden"</p>
         </div>
 
-        <button class="mx-8 my-8 bg-white relative  hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-            ¡Contáctanos!
+        <button class="mx-8 my-8 bg-white relative  hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">   
+            <a href="https://api.whatsapp.com/send?phone=5216144862858&text=Hola%20CAE%20Bruselas.%20Quiero%20mas%20informaci%C3%B3n%20sobre%20las%20asesor%C3%ADas"  target="_blank">¡Contáctanos!</a>
         </button>
 
     </section>
@@ -104,12 +111,24 @@
     </section>
 
     <section class="container mx-auto px-8 py-4">
-        <h2 class="text-3xl font-bold mb-6">Un pequeño vistazo a nuestro proposito</h2>
+        
         <div class="bg-zinc-50 shadow-xl rounded-xl  grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-12">
-            <div class="text-xl bg-pink-400">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis esse itaque et laudantium quisquam maxime excepturi veniam ad repudiandae magnam quia tempora quod exercitationem qui illum, eius culpa cum sint.</p>
+            <div class="text-xl flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-6">Un pequeño vistazo a nuestro proposito</h2>
+                <p class="leading-loose">En el Centro de Asesoría Escolar Bruselas creemos en el poder del acompañamiento académico.
+                    Nuestro compromiso es brindar a cada estudiante el apoyo que necesita para superar sus retos, reforzar sus habilidades y aprender con confianza. No solo ayudamos con tareas: 
+                    
+                    <ul class="leading-loose">
+                        <li class="text-blue-500 font-bold">✔️<span class="text-zinc-700"> Impulsamos el crecimiento.</span></li> 
+                        
+                        <li class="text-blue-500 font-bold">✔️<span class="text-zinc-700"> La motivación </span></li> 
+
+                        <li class="text-blue-500 font-bold">✔️<span class="text-zinc-700"> Y el amor por el aprendizaje.</span></li> 
+                        
+                    </ul>
+                </p>
             </div>
-            <div class="text-xl bg-blue-200">
+            <div class="text-xl">
                 <iframe
                 class="w-full aspect-video rounded-xl"
                 src="https://www.youtube.com/embed/J1RyXPe_-GY?autoplay=1&mute=1&loop=1&playlist=J1RyXPe_-GY"
@@ -123,6 +142,71 @@
         </div>
     </section>
 
-    
+    <section class=" grid grid-cols-1 md:grid-cols-2 container mx-auto px-8 py-14">
+        <div class="flex flex-col  h-full w-full items-center leading-loose ">
+            <h2 class="text-3xl font-bold">Horarios</h2>
+            <div class="w-full flex flex-col items-center pt-12">
+                <p class="text-xl">
+                    <span class="text-blue-500 font-bold">
+                        Lunes a Viernes: 
+                    </span>
+                    <br/>
+                    4:00 PM - 6:30 PM
+                </p>
+                <div class="w-2/3 border-t border-dashed border-gray-400 my-4"></div>
+                <p class="text-xl">
+                    <span class="text-blue-500 font-bold">
+                        Sábados: 
+                    </span>
+                    <br/>
+                    9:00 am - 1:00 PM
+                </p>
+                <div class="w-2/3 border-t border-dashed border-gray-400 my-4"></div>
+            </div>
+            <div class="text-center text-zinc-500 pt-8">
+                <p> 
+                    <span class="font-bold text-zinc-600">
+                        Antes de iniciar el proceso de inscripción, es importante agendar una cita personalizada.
+                    </span>
+                    <br>
+                    Durante esta reunión conoceremos las necesidades académicas del alumno y te explicaremos cómo podemos apoyarlo de la mejor manera.
+                    Contáctanos para programar tu cita, ¡estaremos encantados de recibirte!
+                </p>
+            </div>
+
+        </div>
+        <div class="flex flex-col align-middle  mx-auto">
+            <iframe 
+                class="rounded-xl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.2054514501606!2d-106.1410648!3d28.683500199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea431840539779%3A0xb898da8b12180676!2sColegio%20Bruselas%20Biling%C3%BCe!5e0!3m2!1ses!2smx!4v1753205787397!5m2!1ses!2smx" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class=" h-14 container bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 py-6 flex items-center justify-between px-8 w-full ">
+        <div class="font-semibold">
+            <p>Cada avance, por pequeño que sea, es un gran paso 💖</p>
+        </div>
+        <div>
+            <ul class="flex space-x-8">
+                <li class=" flex">
+                    <img class="mr-2 w-6 h-6 place-self-center" src="./assets/icons/facebook-icon.png" alt="" srcset="">
+                    <a href="https://www.facebook.com/profile.php?id=100057082555491" target="_blank">Facebook</a>
+                </li>
+                <li class=" flex">
+                    <img class="mr-2 w-6 h-6 place-self-center" src="./assets/icons/instagram-icon.png" alt="" srcset="">
+                    <a href="https://www.instagram.com/asesorias_bruselas/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
 </body>
 </html>
