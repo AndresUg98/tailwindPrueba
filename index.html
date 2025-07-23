@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body >
     <header class="bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-200 fixed w-full z-10">
         <nav class="container h-14 mx-auto flex items-center justify-between py-4 px-8">
             <div class="h-auto w-auto flex items-baseline gap-4">
@@ -35,26 +35,26 @@
             <ul id="mobile-menu" class="absolute flex flex-col text-center text-xl align-middle justify-center right-0 top-0 h-screen w-1/3  space-y-16 bg-blue-500/80 z-40 px-4 py-8 hidden md:hidden">
 
                 <li class="hover:text-gray-200">
-                    <a  href="#">Servicios</a>
+                    <a  href="#servicios">Servicios</a>
                 </li>
                 <li class="hover:text-gray-200">
-                    <a href="#">Acerca de</a>
+                    <a href="#acerca-de">Acerca de</a>
                 </li>
                 <li class="hover:text-gray-200">
-                    <a href="#">Ubicación</a>
+                    <a href="#ubicacion">Ubicación</a>
                 </li>
             </ul>
 
             <!-- Menú de navegación laptop-->
             <ul class=" hidden md:flex space-x-8">
                 <li class="hover:text-gray-200">
-                    <a href="#">Servicios</a>
+                    <a  href="#servicios">Servicios</a>
                 </li>
                 <li class="hover:text-gray-200">
-                    <a href="#">Acerca de</a>
+                    <a href="#acerca-de">Acerca de</a>
                 </li>
                 <li class="hover:text-gray-200">
-                    <a href="#">Ubicación</a>
+                    <a href="#ubicacion">Ubicación</a>
                 </li>
             </ul>
         </nav>
@@ -84,7 +84,7 @@
 
     </section>
     
-    <section class="container mx-auto px-8 py-16 ">
+    <section id="servicios" class="container mx-auto px-8 py-16 ">
         <h2 class="text-3xl font-bold mb-6">Nuestros Servicios</h2>
         <div class=" grid  grid-cols-1 md:grid-cols-3 gap-8 ">
             <div class="bg-white rounded-xl shadow-xl text-center ">
@@ -140,7 +140,7 @@
 
     </section>
 
-    <section class="container mx-auto px-8 py-4">
+    <section id="acerca-de" class="container mx-auto px-8 py-4">
         
         <div class="bg-zinc-50 shadow-xl rounded-xl  grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12 py-12 ">
             <div class="flex flex-col justify-center">
@@ -172,7 +172,7 @@
         </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto px-8 py-14 gap-8 ">
+    <section id="ubicacion" class="grid grid-cols-1 md:grid-cols-2 container mx-auto px-8 py-14 gap-8 ">
         <div class="flex flex-col  h-full w-full items-center leading-loose ">
             <h2 class="text-xl md:text-3xl font-bold">Horarios</h2>
             <div class="w-full flex flex-col items-center pt-12">
